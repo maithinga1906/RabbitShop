@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rabbit Shop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="head">
+			<div class="logo">
+				<a onclick="displayProduct()"><img src="logo.png"></a>
+			</div>
+			<div class="search">
+				<center>
+					<input id="search" type="text" placeholder="search..." class="forms" name="" value="" size="70"/>
+					<a onclick="research()"><img id="s" src="search.png"></a>
+				</center>
+			</div>
+			<div class="cart">
+				<a onclick="displayCart()"><img  src="cart.png"></a>
+			</div>
+		</div>
+		<div class="top">top</div>
+		<div class="menu">
+			<div class="border-menu">
+               <div style="background-color:#80BB35; border-radius: 5px; padding: 10px; color: white;"><b>
+                       DANH MỤC</b>
+               </div>
+               <ul style="list-style-type: none;">
+                   <li onclick="shoe()" class="style-border">Shoes</li>
+                   <li  onclick="high()" class="style-border">High heel</li>          
+                   <li onclick="sandals()" class="style-border">Sandal</li>
+               </ul>
+           </div>
+		</div>
+		<div class="main">
+			<div id="products"></div>
+			<div id="giay"></div>
+			<div id="highs"></div>
+			<div id="san"></div>
+			<div id="carts"></div>
+		</div>
+		<div class="footer">
+			Thông Tin Liên Hệ
+			<p>Hotline: 0362027320</p>
+			<p>Email: maithinga1906@gmail.com</p>
+			<a href="https://www.facebook.com/thos.mais">
+			<img src="https://image.flaticon.com/icons/svg/145/145802.svg"/ style="width: 20px; height: 20px">
+			</a>
+		</div>
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
