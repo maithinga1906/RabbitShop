@@ -1,0 +1,128 @@
+.head{
+	grid-area: header; 
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #efcaed;
+}
+input{
+	height: 30px;
+}
+.search{
+	align-items: center;
+	justify-content: center;
+}
+.s{
+	margin-top: 10px;
+}
+.logo{
+	margin-left: 50px;
+}
+.cart{
+	margin-right: 100px;
+}
+.top{
+	grid-area: tops;
+	background-color: red;
+}
+.menu{
+	grid-area: menu; 
+/*	background-color: green;
+*/}
+.main{
+	grid-area: main; 
+/*	background-color: pink;
+*/}
+.footer{
+	grid-area: footer; 
+	background-color: orange;
+}
+.container {
+	display: grid;
+	grid-template-areas:
+		'header header header header header header header header '
+		'tops tops tops tops tops tops tops tops'
+		'menu main main main main main main main'
+		'menu main main main main main main main'
+		'menu main main main main main main main'
+		'footer footer footer footer footer footer footer footer';
+}
+#products{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-left: 7%;
+	width: 800px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-right: 7%;
+}
+#giay{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-left: 7%;
+	width: 800px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-right: 7%;
+}
+#highs{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-left: 7%;
+	width: 800px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-right: 7%;
+}
+#san{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-left: 7%;
+	width: 800px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-right: 7%;
+}
+#products img{
+	width: 200px;
+	height: 170px;
+}
+#san img{
+	width: 200px;
+	height: 170px;
+}
+#highs img{
+	width: 200px;
+	height: 170px;
+}
+#giay img{
+	width: 200px;
+	height: 170px;
+}
+.col-1{
+	width: 200px;
+	border: 1px solid #dcdcdc;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.col-2{
+	display: flex;
+	width: 700px;
+	align-items: center;
+	justify-content: space-between;
+}
+#carts img{
+	width: 150px;
+	height: 150px;
+}
+.style-border{
+border-bottom: 1px solid #dcdcdc;
+padding: 9px;
+}
+.border-menu{
+border: 1px solid #dcdcdc;
+width: 150px;
+border-radius: 5px;
+}
