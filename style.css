@@ -1,3 +1,10 @@
+*{
+	margin: 0px;
+}
+body{
+	align-items: center;
+	justify-content: center;
+}
 .head{
 	grid-area: header; 
 	display: flex;
@@ -23,19 +30,26 @@ input{
 }
 .top{
 	grid-area: tops;
-	background-color: red;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 4%;
 }
 .menu{
 	grid-area: menu; 
-/*	background-color: green;
-*/}
+	align-items: center;
+	justify-content: center;
+}
 .main{
-	grid-area: main; 
-/*	background-color: pink;
-*/}
+	grid-area: main;
+	align-items: center;
+	justify-content: center; 
+}
 .footer{
 	grid-area: footer; 
-	background-color: orange;
+	background-color: #b9ece5;
+}
+.info{
+	margin-left: 20px;
 }
 .container {
 	display: grid;
@@ -47,61 +61,31 @@ input{
 		'menu main main main main main main main'
 		'footer footer footer footer footer footer footer footer';
 }
-#products{
+#products, #timkiem, #giay, #highs, #san{
 	display: grid;
 	grid-template-columns: auto auto auto auto;
-	margin-left: 7%;
 	width: 800px;
 	margin-top: 1%;
 	margin-bottom: 1%;
 	margin-right: 7%;
 }
-#giay{
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	margin-left: 7%;
-	width: 800px;
-	margin-top: 1%;
+#carts{
 	margin-bottom: 1%;
-	margin-right: 7%;
+	margin-left: 1%;
 }
-#highs{
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	margin-left: 7%;
-	width: 800px;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	margin-right: 7%;
-}
-#san{
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	margin-left: 7%;
-	width: 800px;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	margin-right: 7%;
-}
-#products img{
+#products img, #giay img, #san img, #highs img, #timkiem img, #carts img{
 	width: 200px;
 	height: 170px;
 }
-#san img{
-	width: 200px;
-	height: 170px;
-}
-#highs img{
-	width: 200px;
-	height: 170px;
-}
-#giay img{
-	width: 200px;
-	height: 170px;
+#products button ,#giay button, #highs button, #san button, #timkiem button, #carts button{
+	border: 1px solid #ffcd19;
+	border-radius: 3px;
+	background-color: #ffff55;
 }
 .col-1{
 	width: 200px;
 	border: 1px solid #dcdcdc;
+	background-color: #fecccd;
 	align-items: center;
 	justify-content: center;
 	margin-top: 20px;
@@ -113,16 +97,13 @@ input{
 	align-items: center;
 	justify-content: space-between;
 }
-#carts img{
-	width: 150px;
-	height: 150px;
-}
 .style-border{
 border-bottom: 1px solid #dcdcdc;
 padding: 9px;
+margin-top: 1%;
 }
 .border-menu{
 border: 1px solid #dcdcdc;
-width: 150px;
+margin-top: 1%;
 border-radius: 5px;
 }
