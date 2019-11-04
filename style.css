@@ -1,6 +1,3 @@
-*{
-	margin: 0px;
-}
 body{
 	align-items: center;
 	justify-content: center;
@@ -15,18 +12,16 @@ body{
 input{
 	height: 30px;
 }
-.search{
-	align-items: center;
-	justify-content: center;
-}
 .s{
-	margin-top: 10px;
+	margin-top: 15px;
 }
 .logo{
 	margin-left: 50px;
 }
 .cart{
 	margin-right: 100px;
+	align-items: center;
+	justify-content: center;
 }
 .top{
 	grid-area: tops;
@@ -48,8 +43,11 @@ input{
 	grid-area: footer; 
 	background-color: #b9ece5;
 }
-.info{
+#carts{
+	align-items: center;
+	justify-content: center; 
 	margin-left: 20px;
+	margin-bottom: 20px;
 }
 .container {
 	display: grid;
@@ -69,15 +67,22 @@ input{
 	margin-bottom: 1%;
 	margin-right: 7%;
 }
-#carts{
-	margin-bottom: 1%;
-	margin-left: 1%;
+#c{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f3d9c2;
+	border-color: #f3d9c2;
 }
-#products img, #giay img, #san img, #highs img, #timkiem img, #carts img{
+#sl{
+	color: red;
+	font-size: 15px;
+}
+#products img, #giay img, #san img, #highs img, #timkiem img, #carts img, #order img{
 	width: 200px;
 	height: 170px;
 }
-#products button ,#giay button, #highs button, #san button, #timkiem button, #carts button{
+#products button ,#giay button, #highs button, #san button, #timkiem button, #carts button, #order button{
 	border: 1px solid #ffcd19;
 	border-radius: 3px;
 	background-color: #ffff55;
@@ -96,6 +101,7 @@ input{
 	width: 700px;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 10px;
 }
 .style-border{
 border-bottom: 1px solid #dcdcdc;
@@ -106,4 +112,11 @@ margin-top: 1%;
 border: 1px solid #dcdcdc;
 margin-top: 1%;
 border-radius: 5px;
+}
+.res{
+	border: 1px solid #efcaed;
+	background-color: #efcaed;
+	height: 50px;
+	align-items: center;
+	justify-content: space-between;
 }
