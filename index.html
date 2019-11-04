@@ -14,12 +14,15 @@
             </div>
             <div class="search">
                 <center>
-                    <input id="search" type="text" placeholder="search..." class="forms" name="" value="" size="70" />
-                    <a onclick="research()"><img id="s" src="search.png"></a>
+                    <input id="search" type="text" placeholder="search..." name="" value="" size="70" />
+                    <button class="res" onclick="research()"><img id="s" src="search.png"></button>
                 </center>
             </div>
             <div class="cart">
-                <a onclick="displayCart()"><img src="cart.png"></a>
+                <button id="c" onclick="displayCart()">
+                    <img src="cart.png">
+                    <b id="sl"></b>
+                </button>
             </div>
         </div>
         <div class="top">
@@ -35,7 +38,8 @@
                     <li onclick="shoe()" class="style-border">Shoes</li>
                     <li onclick="high()" class="style-border">High heel</li>
                     <li onclick="sandals()" class="style-border">Sandal</li>
-                </ul>
+<!--                     <li onclick="orders()" class="style-border">Bought</li>
+ -->                </ul>
             </div>
         </div>
         <div class="main">
@@ -44,20 +48,21 @@
             <div id="highs"></div>
             <div id="san"></div>
             <div id="carts"></div>
+            <div id="order"></div>
             <div id="timkiem"></div>
         </div>
-        <div class="footer">\
-        	<div class="info">
-        		Thông Tin Liên Hệ
+        <div class="footer">
+            Thông Tin Liên Hệ
             <p>Hotline: 0362027320</p>
             <p>Email: maithinga1906@gmail.com</p>
             <a href="https://www.facebook.com/thos.mais">
                 <img src="https://image.flaticon.com/icons/svg/145/145802.svg" / style="width: 20px; height: 20px">
             </a>
-        	</div>
-            
         </div>
     </div>
+    <script src="list.js"></script>
     <script src="index.js"></script>
+    <script src="cart.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>
