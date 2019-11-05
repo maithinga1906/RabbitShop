@@ -1,6 +1,6 @@
-function shoe() {
+function shoe(){
     document.getElementById("giay").innerHTML = "";
-    for (var i = 0; i < shoes.length; i++) {
+    for (var i = 0; i < shoes.length; i++){
 
         var products = document.getElementById("products");
 
@@ -20,14 +20,13 @@ function shoe() {
         btnAdd.innerText = "add to cart";
         line.className = "col-1";
 
-        btnAdd.onclick = function(arg) {
-            return function() {
-                //var iname = product[arg].name;
+        btnAdd.onclick = function(arg){
+            return function(){
                 var kt = -1;
-                if (cart != null) {
+                if (cart != null){
                     arr = cart;
-                    for (var i = 0; i < cart.length; i++) {
-                        if (cart[i].name == shoes[arg].name) {
+                    for (var i = 0; i < cart.length; i++){
+                        if (cart[i].name == shoes[arg].name){
                             console.log(cart[i]);
                             console.log(shoes[arg].name);
                             var quan;
@@ -37,10 +36,10 @@ function shoe() {
                         }
                     }
                 }
-                if (kt == -1) {
+                if (kt == -1){
                     if (kt == -1) {
-                        for (var i = 0; i < shoes.length; i++) {
-                            if (i == arg) {
+                        for (var i = 0; i < shoes.length; i++){
+                            if (i == arg){
                                 arr.push({
                                     name: shoes[arg].name,
                                     price: shoes[arg].price,
@@ -71,13 +70,13 @@ function shoe() {
     document.getElementById("highs").style.display = "none";
     document.getElementById("san").style.display = "none";
     document.getElementById("timkiem").style.display = "none";
-    document.getElementById("order").style.display = "none";
+    document.getElementById("ordered").style.display = "none";
 }
 
-function high() {
+function high(){
     //document.getElementById("products").innerHTML = "";
     document.getElementById("highs").innerHTML = "";
-    for (var i = 0; i < high_heel.length; i++) {
+    for (var i = 0; i < high_heel.length; i++){
         var products = document.getElementById("products");
 
         var line = document.createElement("div");
@@ -96,14 +95,14 @@ function high() {
         btnAdd.innerText = "add to cart";
         line.className = "col-1";
 
-        btnAdd.onclick = function(arg) {
-            return function() {
+        btnAdd.onclick = function(arg){
+            return function(){
                 //var iname = product[arg].name;
                 var kt = -1;
-                if (cart != null) {
+                if (cart != null){
                     arr = cart;
-                    for (var i = 0; i < cart.length; i++) {
-                        if (cart[i].name == high_heel[arg].name) {
+                    for (var i = 0; i < cart.length; i++){
+                        if (cart[i].name == high_heel[arg].name){
                             console.log(cart[i]);
                             console.log(high_heel[arg].name);
                             var quan;
@@ -115,8 +114,8 @@ function high() {
                 }
                 if (kt == -1) {
                     if (kt == -1) {
-                        for (var i = 0; i < shoes.length; i++) {
-                            if (i == arg) {
+                        for (var i = 0; i < shoes.length; i++){
+                            if (i == arg){
                                 arr.push({
                                     name: high_heel[arg].name,
                                     price: high_heel[arg].price,
@@ -147,13 +146,13 @@ function high() {
     document.getElementById("highs").style.display = "grid";
     document.getElementById("san").style.display = "none";
     document.getElementById("timkiem").style.display = "none";
-    document.getElementById("order").style.display = "none";
+    document.getElementById("ordered").style.display = "none";
 }
 
-function sandals() {
+function sandals(){
     //document.getElementById("products").innerHTML = "";
     document.getElementById("san").innerHTML = "";
-    for (var i = 0; i < sandal.length; i++) {
+    for (var i = 0; i < sandal.length; i++){
 
         var products = document.getElementById("products");
 
@@ -173,14 +172,14 @@ function sandals() {
         btnAdd.innerText = "add to cart";
         line.className = "col-1";
 
-        btnAdd.onclick = function(arg) {
-            return function() {
+        btnAdd.onclick = function(arg){
+            return function(){
                 //var iname = product[arg].name;
                 var kt = -1;
-                if (cart != null) {
+                if (cart != null){
                     arr = cart;
-                    for (var i = 0; i < sandal.length; i++) {
-                        if (cart[i].name == shoes[arg].name) {
+                    for (var i = 0; i < sandal.length; i++){
+                        if (cart[i].name == shoes[arg].name){
                             console.log(cart[i]);
                             console.log(sandal[arg].name);
                             var quan;
@@ -190,10 +189,10 @@ function sandals() {
                         }
                     }
                 }
-                if (kt == -1) {
-                    if (kt == -1) {
-                        for (var i = 0; i < sandal.length; i++) {
-                            if (i == arg) {
+                if (kt == -1){
+                    if (kt == -1){
+                        for (var i = 0; i < sandal.length; i++){
+                            if (i == arg){
                                 arr.push({
                                     name: sandal[arg].name,
                                     price: sandal[arg].price,
@@ -224,10 +223,10 @@ function sandals() {
     document.getElementById("highs").style.display = "none";
     document.getElementById("san").style.display = "grid";
     document.getElementById("timkiem").style.display = "none";
-    document.getElementById("order").style.display = "none";
+    document.getElementById("ordered").style.display = "none";
 }
 
-for (var i = 0; i < product.length; i++) {
+for (var i = 0; i < product.length; i++){
     var products = document.getElementById("products");
 
     var line = document.createElement("div");
@@ -246,14 +245,14 @@ for (var i = 0; i < product.length; i++) {
     btnAdd.innerText = "add to cart";
     line.className = "col-1";
 
-    btnAdd.onclick = function(arg) {
-        return function() {
+    btnAdd.onclick = function(arg){
+        return function(){
             //var iname = product[arg].name;
             var kt = -1;
-            if (cart != null) {
+            if (cart != null){
                 arr = cart;
-                for (var i = 0; i < cart.length; i++) {
-                    if (cart[i].name == product[arg].name) {
+                for (var i = 0; i < cart.length; i++){
+                    if (cart[i].name == product[arg].name){
                         console.log(cart[i]);
                         console.log(product[arg].name);
                         var quan;
@@ -263,10 +262,10 @@ for (var i = 0; i < product.length; i++) {
                     }
                 }
             }
-            if (kt == -1) {
-                if (kt == -1) {
-                    for (var i = 0; i < product.length; i++) {
-                        if (i == arg) {
+            if (kt == -1){
+                if (kt == -1){
+                    for (var i = 0; i < product.length; i++){
+                        if (i == arg){
                             arr.push({
                                 name: product[arg].name,
                                 price: product[arg].price,
@@ -293,22 +292,22 @@ for (var i = 0; i < product.length; i++) {
     products.appendChild(line);
 }
 
-function displayProduct() {
+function displayProduct(){
     document.getElementById("products").style.display = "grid";
     document.getElementById("carts").style.display = "none";
     document.getElementById("giay").style.display = "none";
     document.getElementById("highs").style.display = "none";
     document.getElementById("san").style.display = "none";
     document.getElementById("timkiem").style.display = "none";
-    document.getElementById("order").style.display = "none";
+    document.getElementById("ordered").style.display = "none";
 }
 
 var img = ["s1.png", "s2.png", "s4.jfif", "s5.jfif"]
 var position = 0;
-setInterval(function() {
+setInterval(function(){
     document.getElementById('myImage').src = img[position];
     position++;
-    if (position == 4) {
+    if (position == 4){
         position = 0;
     }
 }, 2000);
