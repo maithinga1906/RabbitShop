@@ -1,3 +1,6 @@
+*{
+	margin: 0px;
+}
 body{
 	align-items: center;
 	justify-content: center;
@@ -41,7 +44,9 @@ input{
 }
 .footer{
 	grid-area: footer; 
-	background-color: #b9ece5;
+	background-color: black;
+	color: white;
+	padding: 10px;
 }
 #carts{
 	align-items: center;
@@ -59,7 +64,7 @@ input{
 		'menu main main main main main main main'
 		'footer footer footer footer footer footer footer footer';
 }
-#products, #timkiem, #giay, #highs, #san{
+#products, #timkiem, #giay, #highs, #san, #orders{
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	width: 800px;
@@ -78,14 +83,21 @@ input{
 	color: red;
 	font-size: 15px;
 }
-#products img, #giay img, #san img, #highs img, #timkiem img, #carts img, #order img{
+#products img, #giay img, #san img, #highs img, #timkiem img, #carts img, #orders img{
 	width: 200px;
 	height: 170px;
 }
-#products button ,#giay button, #highs button, #san button, #timkiem button, #carts button, #order button{
+#products button ,#giay button, #highs button, #san button, #timkiem button, #carts button{
 	border: 1px solid #ffcd19;
 	border-radius: 3px;
 	background-color: #ffff55;
+}
+#ordered button{
+	border: 1px solid #ffcd19;
+	border-radius: 3px;
+	background-color: #ffff55;
+	width: 100px;
+	height: 30px;
 }
 .col-1{
 	width: 200px;
