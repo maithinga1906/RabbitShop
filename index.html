@@ -38,8 +38,8 @@
                     <li onclick="shoe()" class="style-border">Shoes</li>
                     <li onclick="high()" class="style-border">High heel</li>
                     <li onclick="sandals()" class="style-border">Sandal</li>
-<!--                     <li onclick="orders()" class="style-border">Bought</li>
- -->                </ul>
+                    <li onclick="buy()" class="style-border">Ordered</li>
+                </ul>
             </div>
         </div>
         <div class="main">
@@ -48,7 +48,11 @@
             <div id="highs"></div>
             <div id="san"></div>
             <div id="carts"></div>
-            <div id="order"></div>
+            <div id="ordered">
+                <div id="orders"></div>
+                <button onclick="deleteAll()">Clear</button>
+            </div>
+            
             <div id="timkiem"></div>
         </div>
         <div class="footer">
